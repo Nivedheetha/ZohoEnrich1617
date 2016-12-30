@@ -2,8 +2,8 @@
 #include<string.h>
 int check_vowels_space(int a)
 {	
-    int k=1;
-    switch(a)
+	int k=1;
+	switch(a)
     {
 		case 'a':
 		case 'A':
@@ -19,7 +19,7 @@ int check_vowels_space(int a)
 					k=0;
 					break;
 	}
-    return k;
+	return k;
 }
 int check_symbols(int a)
 {
@@ -42,13 +42,13 @@ int main()
 	for(int i=0;i<n;i++)
 	{
 		c=check_vowels_space(input[i]);
-	    d=check_symbols(input[i]);
-	    if(c&&d)
-	    {	
+		d=check_symbols(input[i]);
+		if(c&&d)
+	    {
 			output[j]=input[i];
-		    j++;
-	     }
-    }
+			j++;
+		}
+		}
 	output[j]='\0';
 	puts(output);
 	return 0;
