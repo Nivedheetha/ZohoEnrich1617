@@ -4,7 +4,7 @@ int check_vowels_space(int a)
 {	
 	int k=1;
 	switch(a)
-    {
+    	{
 		case 'a':
 		case 'A':
 		case 'e':
@@ -16,8 +16,8 @@ int check_vowels_space(int a)
 		case 'u':
 		case 'U':
 		case ' ':
-					k=0;
-					break;
+				k=0;
+				break;
 	}
 	return k;
 }
@@ -38,17 +38,17 @@ int main()
 	int c,d,n,j=0;
 	printf("enter the string:");
 	gets(input);
-    n=strlen(input);
+	n=strlen(input);
 	for(int i=0;i<n;i++)
 	{
 		c=check_vowels_space(input[i]);
 		d=check_symbols(input[i]);
 		if(c&&d)
-	    {
+		{
 			output[j]=input[i];
 			j++;
 		}
-		}
+	}
 	output[j]='\0';
 	puts(output);
 	return 0;
