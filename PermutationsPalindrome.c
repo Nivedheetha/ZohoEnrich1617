@@ -2,25 +2,26 @@
 #include<string.h>
 int main() 
 {
-// your code goes here
-	char name[10];
+	char name[10],copy[10];
 	int n,flag=0,c=0;
 	printf("enter value of string:");
 	scanf("%s",name);
-	n=strlen(name);
+	//creating a copy of the input string
+	strcpy(copy,name);
+	n=strlen(copy);
 	for(int i=0;i<=n/2;i++)
 	{	
 		for(int j=i+1;j<n;j++)
 		{
-			if(name[i]==name[j])
+			if(copy[i]==copy[j])
 			{
-				name[i]=name[j]=0;
+				copy[i]=copy[j]=0;
 			}
 		}
 	}
 	for(int i=0;i<n;i++)
 	{
-		if(name[i]!=0)
+		if(copy[i]!=0)
 		{
 			flag=1;
 			c++;
