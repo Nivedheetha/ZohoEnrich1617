@@ -12,7 +12,8 @@ int main()
 	for(int i=0;i<=n/2;i++)
 	{	
 		for(int j=i+1;j<n;j++)
-		{
+		{	
+			//checking for even no. of same letters
 			if(copy[i]==copy[j])
 			{
 				copy[i]=copy[j]=0;
@@ -38,7 +39,8 @@ int main()
 			printf("no");
 		}
 		else
-		{
+		{	
+			//only one odd letter is allowed
 			printf("yes");
 		}
 	}
