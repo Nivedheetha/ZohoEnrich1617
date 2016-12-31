@@ -31,7 +31,6 @@ int check_symbols(int a)
 	}
 	return f;
 }
-
 int main() 
 {
 	char input[50],output[50];
