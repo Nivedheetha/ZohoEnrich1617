@@ -9,7 +9,7 @@ int main()
 	//creating a copy of the input string
 	strcpy(copy,name);
 	n=strlen(copy);
-	for(int i=0;i<=n/2;i++)
+	for(int i=0;i<n-1;i++)
 	{	
 		for(int j=i+1;j<n;j++)
 		{	
