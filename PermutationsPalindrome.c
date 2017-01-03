@@ -3,7 +3,7 @@
 int main() 
 {
 	char name[10],copy[10];
-	int n,flag=0,c=0;
+	int n,c=0;
 	printf("enter value of string:");
 	scanf("%s",name);
 	//creating a copy of the input string
@@ -24,25 +24,18 @@ int main()
 	{
 		if(copy[i]!=0)
 		{
-			flag=1;
 			c++;
 		}
 	}
-	if(flag==0)
+	if(c>1)
 	{
-	printf("yes");
+		printf("no");
 	}
 	else
-	{
-		if(c>1)
-		{
-			printf("no");
-		}
-		else
-		{	
-			//only one odd letter is allowed
-			printf("yes");
-		}
+	{	
+		//at max only one odd letter is allowed
+		printf("yes");
 	}
 	return 0;
 }
+
