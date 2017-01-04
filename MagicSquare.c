@@ -36,38 +36,38 @@ int main(void)
 	{
 		if(i==0)
 		{
-            l=n-1;
-        }
+            		l=n-1;
+        	}
 		else
-		{	
-            l=i-1;
-        }
+		{
+			l=i-1;
+        	}
 		if(j==n-1)
 		{	
-            m=0;
-        }
+			m=0;
+        	}
 		else
 		{	
-            m=j+1;
-        }
-        //if the desired block is already filled
-        if(a[l][m]!=0)
+            		m=j+1;
+       	 	}
+        	//if the desired block is already filled
+        	if(a[l][m]!=0)
 		{
-            m=j;
+            		m=j;
 			if(i==n-1)
 			{
 				l=0;
 			}
 			else
-            {
+            		{
 				l=i+1;
-            }
+            		}
 		}
-        a[l][m]=k;
+        	a[l][m]=k;
 		i=l;
 		j=m;
-		k=k+1;;
+		k++;
 	}
-printmatrix(a,n);
-return 0;
+	printmatrix(a,n);
+	return 0;
 }
