@@ -13,13 +13,14 @@ int main(void)
 	    next=original;
 	    while(next>0)
 	    {
-	        rem=next%10;
-		    rev=rev*10+rem;
-		    next=next/10;
+            rem=next%10;
+            rev=rev*10+rem;
+            next=next/10;
 	    }
 	    if(original==rev)
-	    {   palin=1;
-		    printf("%d",original);
+	    {
+            palin=1;
+            printf("%d",original);
 	    }
 	    original++;
 	}while(palin!=1);
