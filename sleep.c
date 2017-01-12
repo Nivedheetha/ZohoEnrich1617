@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
-int main(void) {
-// your code goes here
+int main(void) 
+{
+	// your code goes here
 	int i;
 	char string[]={'H','A','P','P','Y',' ','P','O','N','G','A','L','\0'};
 	for(i=0;string[i]!='\0';i++)
