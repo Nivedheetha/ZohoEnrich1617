@@ -1,6 +1,6 @@
 #include <stdio.h>
- int main(void) 
- {
+int main(void) 
+{
 	// your code goes here
 	int i,n,flag,prime=0,n1;
 	printf("enter the number");
