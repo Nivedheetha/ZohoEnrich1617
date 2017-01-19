@@ -19,7 +19,7 @@ void display(int matrix[4][4])
 			}
 			else
 			{
-				printf("0%d|",matrix[i][j]);
+				printf(" %d|",matrix[i][j]);
 			}
 		}
 	}
