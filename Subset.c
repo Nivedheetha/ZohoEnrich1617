@@ -21,7 +21,7 @@ int main(void)
 			num=num/2;
 			if(a[i][j]==1)
 			{
-				printf("%d ",set[j]);
+				printf("%d,",set[j]);
 			}
 		}
 		printf("\n");
