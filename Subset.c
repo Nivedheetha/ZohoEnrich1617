@@ -2,7 +2,7 @@
 #include<math.h>
 int main(void) 
 {
-	int n,n1,set[5],j,a[32][3],num,rem,i;
+	int n,n1,set[5],j,a[32][5],num,rem,i;
 	printf("enter size of set:\n");
 	scanf("%d",&n);
 	printf("enter the elements:\n");
