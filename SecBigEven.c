@@ -24,6 +24,17 @@ int main(void) {
 			}
 		}
 	}
-	printf("%d",b[k-2]);
+	if(k>=2)
+	{
+		printf("%d",b[k-2]);
+	}
+	else if(k==1)
+	{
+		printf("the given array contains only one even element.");
+	}
+	else
+	{
+		printf("the given array contains no even element.");
+	}
 	return 0;
 }
